@@ -10,20 +10,50 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="./assets/css/helpers.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Script Vue Js -->
     <script src="./assets/js/vue.3.2.47.js"></script>
-    <title>Project</title>
+    <title>Netflix Home</title>
 </head>
-<body>
+<body class="bg-[#00081D] text-white">
     <!-- Vue JS App -->
-    <div id="app">
-        <!-- Project Main Container -->
-        <main>
-            A
+    <div id="app" class="max-w-screen-2xl mx-auto my-2">
+
+        <header class="mx-12 border">
+
+            <!-- Header Nav Section -->
+            <nav class="flex justify-between items-center border h-12 my-2">
+               <div class="w-1/6">
+                <a href="https://www.netflix.com/it/">
+                    <img src="./assets/img/netflix-logo.png" alt="netflix-logo" class="h-12">
+                </a>
+               </div>
+               <div class="w-1/5 flex items-center justify-end">
+                <button class="border border-gray-500 mr-1.5 px-4 py-1 text-sm rounded">
+                    <i class="fa-solid fa-globe pr-2"></i> 
+                    <span>Italiano</span>
+                    <i class="fa-solid fa-caret-down pl-2"></i>
+                </button>
+                <button class="mx-1.5 px-4 py-1.5 text-xs rounded bg-[#E50914] font-bold">Accedi</button>
+               </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section>
+                hero sec
+            </section>
+
+        </header>
+
+        <main class="mx-12 border">
+            MAIN
         </main>
+
+        <footer class="mx-12 border">
+            FOOTER
+        </footer>
     </div>
 
     <!-- Script App JS -->
