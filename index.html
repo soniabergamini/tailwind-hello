@@ -10,7 +10,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Style CSS -->
-    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Script Vue Js -->
@@ -24,14 +24,14 @@
         <header class="mx-12 border">
 
             <!-- Header Nav Section -->
-            <nav class="flex justify-between items-center border h-12 my-2">
+            <nav class="flex justify-between items-center h-12 my-2">
                <div class="w-1/6">
                 <a href="https://www.netflix.com/it/">
                     <img src="./assets/img/netflix-logo.png" alt="netflix-logo" class="h-12">
                 </a>
                </div>
                <div class="w-1/5 flex items-center justify-end">
-                <button class="border border-gray-500 mr-1.5 px-4 py-1 text-sm rounded">
+                <button class="border border-gray-500 mr-1.5 px-4 py-1 text-sm rounded flex justify-around items-center">
                     <i class="fa-solid fa-globe pr-2"></i> 
                     <span>Italiano</span>
                     <i class="fa-solid fa-caret-down pl-2"></i>
@@ -41,8 +41,15 @@
             </nav>
 
             <!-- Hero Section -->
-            <section>
-                hero sec
+            <section id="heroSec" class="mx-1.5 rounded-3xl my-2 relative">
+                <img src="./assets/img/hero.png" alt="heroimg" class="rounder-3xl">
+                <div class="absolute top-0 left-0 p-20 w-3/4">
+                    <h1 class="text-7xl font-bold leading-normal">Film, serie TV e tanto altro, senza limiti</h1>
+                    <h3 class="text-3xl font-medium mb-4">Guarda ciò che vuoi ovunque. Disdici quando vuoi.</h3>
+                    <h6 class="text-xl mt-10 mb-4">Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h6>
+                    <input type="email" placeholder="Indirizzo email" class="border border-gray-500 rounded h-13 p-4 bg-[#000000a1] w-1/2 invalid:border-[#E50914]">
+                    <button class="ml-3 px-5 pt-3.5 pb-4 text-xl rounded bg-[#E50914] font-bold h-13 items-center">Inizia <i class="ml-2 fa-solid fa-chevron-right fa-xs"></i></button>
+                </div>
             </section>
 
         </header>
